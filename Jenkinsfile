@@ -8,11 +8,16 @@ pipeline {
       }
     }
 
-    stage('Maven Build 0') {
+    stage('Building...') {
       steps {
-        sh 'mvn install'
+        sh 'echo building...'
       }
     }
 
+    stage('Deploying...') {
+      steps {
+        sh 'echo deploying...'
+      }
+    }
   }
 }
