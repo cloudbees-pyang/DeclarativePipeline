@@ -4,7 +4,7 @@ pipeline {
     
     stage('Checkout Scm') {
       steps {
-        git 'https://github.com/cloudbees-pyang/simple-java-maven-app.git'
+        git url:'https://github.com/cloudbees-pyang/simple-java-maven-app.git'
       }
     }
 
