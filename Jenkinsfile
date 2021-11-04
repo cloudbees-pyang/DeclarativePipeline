@@ -13,6 +13,12 @@ pipeline {
         sh 'echo building...'
       }
     }
+    
+    stage('Unit Test') {
+      steps {
+        sh 'echo unit testing...'
+      }
+    }
 
     stage('Test') {
       steps {
