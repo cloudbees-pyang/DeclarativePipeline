@@ -5,10 +5,7 @@ pipeline {
     stage('Checkout Scm') {
       when {
         beforeAgent true
-        anyOf {
-          branch 'main';
-          branch 'master'
-        }
+        branch 'main'
       }
       
       steps {
