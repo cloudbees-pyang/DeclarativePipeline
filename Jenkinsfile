@@ -1,15 +1,16 @@
 pipeline {
   agent any
   stages {
-    when {
+    
+    stage('Checkout Scm') {
+      when {
         beforeAgent true
         anyOf {
           branch 'main';
           branch 'master'
         }
-    }
-    
-    stage('Checkout Scm') {
+      }
+      
       steps {
         git 'https://github.com/cloudbees-pyang/simple-java-maven-app.git'
       }
