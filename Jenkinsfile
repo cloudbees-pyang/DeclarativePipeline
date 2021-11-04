@@ -3,11 +3,6 @@ pipeline {
   stages {
     
     stage('Checkout Scm') {
-      when {
-        beforeAgent true
-        branch 'main'
-      }
-      
       steps {
         git 'https://github.com/cloudbees-pyang/simple-java-maven-app.git'
       }
