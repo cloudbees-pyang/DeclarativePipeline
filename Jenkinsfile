@@ -3,6 +3,9 @@ pipeline {
   stages {
     
     stage('Checkout Scm') {
+      when {
+        branch 'master
+      }
       steps {
         git 'https://github.com/cloudbees-pyang/simple-java-maven-app.git'
       }
