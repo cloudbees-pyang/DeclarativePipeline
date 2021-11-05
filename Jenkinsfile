@@ -23,7 +23,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'echo testing...'
-        publishEvent simpleEvent('helloWorld')
+        publishEvent simpleEvent('startDeploy')
       }
     }
   }
